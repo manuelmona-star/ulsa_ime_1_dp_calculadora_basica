@@ -27,8 +27,15 @@ int main() {
 
     // Pasos 4 y 5: leer los dos números
     a = leerDecimal("Primer numero: ");
+
+    do {
     b = leerDecimal("Segundo numero: ");
 
+    if (opcion == 4 && b == 0) {
+        std::cout << "No se puede dividir entre cero.\n";
+    }
+
+} while (opcion == 4 && b == 0);
     // Paso 7: decisiòn mùltiple 
     switch (opcion) {
     case 1:

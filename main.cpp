@@ -20,8 +20,10 @@ int main() {
     std::cout << "Calculadora basica\n";
     std::cout << "1) Suma  2) Resta  3) Multiplicacion  4) Division\n";
 
-    // Paso 3: leer la opción
+    // Paso 3: leer la opción y validar
+    do {
     opcion = leerEntero("Elige una opcion (1-4): ");
+    } while (opcion < 1 || opcion > 4);
 
     // Pasos 4 y 5: leer los dos números
     a = leerDecimal("Primer numero: ");

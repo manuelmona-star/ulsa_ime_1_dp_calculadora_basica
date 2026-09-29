@@ -27,9 +27,32 @@ int main() {
     a = leerDecimal("Primer numero: ");
     b = leerDecimal("Segundo numero: ");
 
-    // Paso 7: por ahora solo suma
-    resultado = a + b;
-    simbolo = '+';
+    // Paso 7: decisiòn mùltiple 
+    switch (opcion) {
+    case 1:
+        resultado = a + b;
+        simbolo = '+';
+        break;
+
+    case 2:
+        resultado = a - b;
+        simbolo = '-';
+        break;
+
+    case 3:
+        resultado = a * b;
+        simbolo = '*';
+        break;
+
+    case 4:
+        resultado = a / b;
+        simbolo = '/';
+        break;
+
+    default:
+        std::cout << "Opcion inesperada\n";
+        break;
+}
 
     // Paso 8: mostrar resultado
     std::cout << a << " " << simbolo << " " << b << " = " << resultado << "\n";

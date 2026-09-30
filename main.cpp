@@ -41,7 +41,7 @@ int main() {
     case 1:
         resultado = a + b;
         simbolo = '+';
-        break;
+        
 
     case 2:
         resultado = a - b;
